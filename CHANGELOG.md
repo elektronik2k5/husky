@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.14.0
+
+* Use [yarn-or-npm](https://github.com/camacho/yarn-or-npm) under the hood to allow yarn users use it as script runner
+
 ## 0.13.1
 
 * Makes it easier for projects to transition from [ghooks](https://github.com/gtramontina/ghooks) by detecting ghooks installed scripts and automatically migrating them

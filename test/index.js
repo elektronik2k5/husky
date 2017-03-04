@@ -30,7 +30,7 @@ describe('husky', function () {
 
     expect(hook).toInclude('#husky')
     expect(hook).toInclude('cd .')
-    expect(hook).toInclude('npm run precommit')
+    expect(hook).toInclude('yarn-or-npm run precommit')
 
     husky.uninstallFrom('/node_modules/husky')
     expect(exists('hooks/pre-push')).toBeFalsy()

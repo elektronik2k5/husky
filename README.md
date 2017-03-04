@@ -57,6 +57,10 @@ If you need to debug hooks, simply use `npm run <script-name>`. For example:
 ```bash
 npm run precommit
 ```
+Works with Yarn the same way:
+```bash
+yarn run precommit
+```
 
 ### Git GUI clients support
 
@@ -89,6 +93,15 @@ Yes
 ### Yarn
 
 For Yarn, you currently need to pass `--force` to be sure that hooks are going to be installed (`yarn add husky --dev --force`). You can also manually install hooks using `node node_modules/husky/bin/install`.
+
+We use [yarn-or-npm](https://github.com/camacho/yarn-or-npm) under the hood, so to have full interoprability use it in your scripts:
+```json
+"precommit": "yarn-or-npm run some-script"
+```
+Or the shorter version:
+```json
+"precommit": "yon run some-script"
+```
 
 </details>
 
